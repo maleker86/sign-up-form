@@ -1,3 +1,171 @@
+:root {
+    --shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
 body {
-    background-color: lightblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    display:flex;
+    background-color:cornsilk;
+    height:100vh;
+    /* width:100vw; */
+}
+
+#sidebar {
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background: purple; */
+    background: url(./imgs/soundtrap-sidebar_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width:650px;
+    /* width:30vw; */
+}
+
+/* #sidebar:first-child {
+    flex:2;
+}
+
+#sidebar:last-child(1) {
+    flex:1;
+} */
+
+#logo_section {
+    margin-top:30vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+#logo_banner {
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 100%, 0%, 0.4);
+    width:100%;
+}
+
+#logo {
+    max-height:10vh;
+    width: auto;
+    /* background-color: blue; */
+    padding:1vh;
+}
+
+#company_name {
+    display:flex;
+    align-items: center;
+    font-size: 2rem;
+    padding:1vh;
+    color:antiquewhite;
+    /* background-color: aqua; */
+}
+
+#image_credit {
+    /* flex:1; */
+    position: absolute;
+    bottom:0;
+    left: 10%;
+    text-align: center;
+    font-size: .8rem;
+    color:antiquewhite;
+    padding: 1vh;
+    /* background-color: rgb(70, 197, 197); */
+}
+
+#image_credit a {
+    color:antiquewhite;
+    padding: 2px;
+}
+
+#image_credit a:hover {
+    color: orange;
+    background:black;
+}
+
+main {
+    flex: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-items: center; */
+    background: #eee;
+    /* width:70vw; */
+}
+
+#blurbs {
+    font-size: 1.1rem;
+    font-weight:bold;
+    padding: 2vw;
+    /* background-color: yellow; */
+}   
+
+#blurbs p:last-child {
+    padding: 2vw 0;
+    text-align:left;
+}
+
+#account_verification {
+    font-size: .9rem;
+    margin: 2vh;
+    /* background-color: orange; */
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    padding: 1vh;
+    /* flex-wrap: wrap; */
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.inputs {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.group {
+    flex:1;
+    /* display:flex; */
+    padding: 1vh 5vw 1vh 1vw;
+}
+
+.group > div {
+    float:left;
+    padding:1vh;
+    width:100%;
+    max-width: 350px;
+    /* background-color: navy; */
+}
+
+input[type=text], input[type=email], input[type=number] {
+    /* background-color:green; */
+    width:100%;
+}
+
+label {
+    font-size: .7rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+
+button {
+    font-weight: 600;
+    max-width: 150px;
+    padding: 1vh;
+    margin: 2vh;
+    box-shadow: var(--shadow);
 }
