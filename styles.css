@@ -1,4 +1,6 @@
 :root {
+    --accent1: yellow;
+    --accent2: orange;
     --shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -90,7 +92,7 @@ body {
 }
 
 #image_credit a:hover {
-    color: orange;
+    color: (--accent2);
     background:black;
 }
 
@@ -122,6 +124,14 @@ main {
     /* background-color: orange; */
 }
 
+#account_verification a {
+    color: var(--accent2);
+}
+
+#account_verification a:hover {
+    color: black;
+}
+
 form {
     display:flex;
     flex-direction: column;
@@ -133,11 +143,18 @@ form {
 
 form h1, h2, h3 {
     margin: 0 2vh;
+    color: var(--accent2);
+    text-shadow: var(--shadow);
 }
 
 button, input {
     border-radius: 5px;
     border: solid 1px #bbb;
+}
+
+em {
+    color: var(--accent2);
+    text-shadow: var(--shadow);
 }
 
 .inputs {
@@ -182,8 +199,8 @@ button {
     margin: 2vh;
     background: linear-gradient(
         to right, 
-        yellow,
-        orange);
+        var(--accent1),
+        var(--accent2));
     box-shadow: var(--shadow);
 }
 
