@@ -131,23 +131,35 @@ form {
     box-shadow: var(--shadow);
 }
 
+form h1, h2, h3 {
+    margin: 0 2vh;
+}
+
+button, input {
+    border-radius: 5px;
+    border: solid 1px #bbb;
+}
+
 .inputs {
     display: flex;
+    margin-right:10vw;
     /* flex-direction: column; */
 }
 
 .group {
     flex:1;
+    margin-right:none;
     /* display:flex; */
-    padding: 1vh 5vw 1vh 1vw;
+    padding: 1vh 3vw 1vh 1vw;
+    /* background-color: yellow; */
 }
 
 .group > div {
     float:left;
     padding:1vh;
     width:100%;
-    max-width: 350px;
-    /* background-color: navy; */
+    /* max-width: 350px; */
+    /* background-color: pink; */
 }
 
 input[type=text], input[type=email], input[type=number] {
@@ -163,9 +175,18 @@ label {
 }
 
 button {
+    cursor: pointer;
     font-weight: 600;
     max-width: 150px;
     padding: 1vh;
     margin: 2vh;
+    background: linear-gradient(
+        to right, 
+        yellow,
+        orange);
     box-shadow: var(--shadow);
+}
+
+button:hover {
+    background-color: orange;
 }
