@@ -152,6 +152,11 @@ button, input {
     border: solid 1px #bbb;
 }
 
+input {
+    padding: .5vh;
+    width:100%;
+}
+
 em {
     color: var(--accent2);
     text-shadow: var(--shadow);
