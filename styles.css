@@ -162,6 +162,17 @@ em {
     text-shadow: var(--shadow);
 }
 
+.error {
+    outline: solid red 1px;
+}
+
+.error_msg {
+    font-size: .8rem;
+    color:red;
+    margin-top:.5vh;
+}
+
+
 .inputs {
     display: flex;
     margin-right:10vw;
@@ -187,6 +198,12 @@ em {
 input[type=text], input[type=email], input[type=number] {
     /* background-color:green; */
     width:100%;
+}
+
+input:focus {
+    outline-color: var(--accent2);
+    border:none;
+    box-shadow: var(--shadow);
 }
 
 label {
